@@ -59,4 +59,29 @@ public class CategoryController {
         categoryService.startOrStop(status,id);
         return Result.success();
     }
+
+    /**
+     * 修改分类
+     * @param categoryDTO
+     * @return
+     */
+    @PutMapping
+    @ApiOperation("修改分类")
+    public Result updateCategory(@RequestBody CategoryDTO categoryDTO){
+        categoryService.updateCategory(categoryDTO);
+        return Result.success();
+    }
+
+    /**
+     * 根据id删除分类
+     * @param id
+     * @return
+     */
+    @DeleteMapping
+    @ApiOperation("根据id删除分类")
+    public Result deleteCategory(Long id){
+        log.info("删除分类，id为:{}",id);
+        categoryService.deleteById(id);
+        return Result.success();
+    }
 }

@@ -27,4 +27,18 @@ public interface CategoryService {
      * @return
      */
     void startOrStop(Integer status, Long id);
+
+    /**
+     * 修改分类
+     * @param categoryDTO
+     * @return
+     */
+    void updateCategory(CategoryDTO categoryDTO);
+
+    /**
+     * 根据id删除分类
+     * @param id
+     * @return
+     */
+    void deleteById(Long id);
 }
