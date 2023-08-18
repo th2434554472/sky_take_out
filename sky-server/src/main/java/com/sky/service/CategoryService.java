@@ -41,4 +41,11 @@ public interface CategoryService {
      * @return
      */
     void deleteById(Long id);
+
+    /**
+     * 根据类型查询分类
+     * @param type
+     * @return
+     */
+    void list(Integer type);
 }
