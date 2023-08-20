@@ -9,6 +9,8 @@ import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 
+import java.util.List;
+
 @Mapper
 public interface CategoryMapper {
     /**
@@ -50,5 +52,5 @@ public interface CategoryMapper {
      * @param type
      * @return
      */
-    void list(Integer type);
+    List<Category> list(Integer type);
 }

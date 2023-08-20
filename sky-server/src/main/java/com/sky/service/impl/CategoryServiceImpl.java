@@ -19,6 +19,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Service
 public class CategoryServiceImpl implements CategoryService {
@@ -123,7 +124,7 @@ public class CategoryServiceImpl implements CategoryService {
      * @return
      */
     @Override
-    public void list(Integer type) {
-        categoryMapper.list(type);
+    public List<Category> list(Integer type) {
+        return categoryMapper.list(type);
     }
 }
