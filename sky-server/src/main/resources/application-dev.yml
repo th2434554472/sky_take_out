@@ -3,12 +3,12 @@ sky:
     driver-class-name: com.mysql.cj.jdbc.Driver
     host: localhost
     port: 3306
-    database: sky_take_out
-    username: root
-    password: 712014
+    database: 
+    username: 
+    password: 
 
   alioss:
-    endpoint: oss-cn-hangzhou.aliyuncs.com
-    access-key-id: LTAI5tBf1yiAEk75WTWjQyHV
-    access-key-secret: xVNd07pP8w89qBg8COkGaDkDJppkUX
-    bucket-name: th712014
+    endpoint: 
+    access-key-id: 
+    access-key-secret: 
+    bucket-name: 
